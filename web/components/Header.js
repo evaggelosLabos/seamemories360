@@ -81,6 +81,9 @@ export default function Header() {
           flexDirection: 'column',
           justifyContent: 'center',
           cursor: 'pointer',
+
+          // ⭐ NEW FIX:
+    marginRight: '15px',  // move hamburger slightly left
         }}
         className="mobile-menu-icon"
         onClick={() => setMenuOpen(!menuOpen)}
