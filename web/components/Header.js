@@ -71,7 +71,7 @@ export default function Header() {
         <Link href="/experiences" style={{ color: '#000', textDecoration: 'none' }}>Experiences</Link>
         <Link href="/about" style={{ color: '#000', textDecoration: 'none' }}>About</Link>
         <Link href="/partners" style={{ color: '#000', textDecoration: 'none' }}>Partners</Link>
-        <Link href="/contact" style={{ color: '#000', textDecoration: 'none' }}>Contactu</Link>
+        <Link href="/contact" style={{ color: '#000', textDecoration: 'none' }}>Contact</Link>
       </nav>
 
       {/* 🔹 Hamburger for mobile */}
