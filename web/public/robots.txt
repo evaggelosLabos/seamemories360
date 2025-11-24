@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seamemories360.com/sitemap.xml
+
+# Block sensitive or backend pages
+Disallow: /api/
+Disallow: /admin/
