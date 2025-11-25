@@ -1,15 +1,74 @@
+import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function About() {
   return (
-    <div style={{
-      minHeight: "100vh",
-      display: "flex",
-      flexDirection: "column",
-      background: "linear-gradient(to bottom, #dff2ff, #c8e7ff)"
-    }}>
-      
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        background: "linear-gradient(to bottom, #dff2ff, #c8e7ff)"
+      }}
+    >
+
+      {/* 🔵 SEO HEAD TAGS */}
+      <Head>
+        <title>About SeaMemories360 | Underwater Filming in Corfu</title>
+        <meta
+          name="description"
+          content="Learn about SeaMemories360 — creators of underwater videos, underwater selfies, and cinematic sea experiences in Corfu using professional underwater drones and AI-enhanced editing."
+        />
+        <link rel="canonical" href="https://www.seamemories360.com/about" />
+
+        {/* OG / SOCIAL */}
+        <meta property="og:title" content="About SeaMemories360 | Underwater Filming in Corfu" />
+        <meta
+          property="og:description"
+          content="Meet the creators behind SeaMemories360 — underwater videographers combining drones, AI, and filmmaking to capture unforgettable sea experiences in Corfu."
+        />
+        <meta property="og:image" content="https://www.seamemories360.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.seamemories360.com/about" />
+        <meta property="og:type" content="website" />
+
+        {/* TWITTER CARD */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About SeaMemories360 | Underwater Filmmaking in Corfu" />
+        <meta
+          name="twitter:description"
+          content="Underwater video creators based in Corfu — combining drone cinematography, AI, and storytelling."
+        />
+        <meta name="twitter:image" content="https://www.seamemories360.com/og-image.jpg" />
+
+        {/* KEYWORDS */}
+        <meta
+          name="keywords"
+          content="about seamemories360, underwater videographer corfu, underwater filming greece, underwater drones corfu, sea videography team, underwater selfie creators"
+        />
+
+        {/* JSON-LD STRUCTURED DATA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "About SeaMemories360",
+              "url": "https://www.seamemories360.com/about",
+              "description":
+                "About SeaMemories360 — creators of underwater videos, underwater selfies, and sea experiences in Corfu, Greece.",
+              "publisher": {
+                "@type": "Person",
+                "name": "SeaMemories360",
+                "jobTitle": "Underwater Videographer",
+                "url": "https://www.seamemories360.com"
+              }
+            })
+          }}
+        />
+      </Head>
+
       <Header />
 
       {/* HERO SECTION */}

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -11,6 +12,63 @@ export default function Partners() {
         background: "linear-gradient(to bottom, #dff2ff, #c8e7ff)",
       }}
     >
+
+      {/* 🔵 SEO HEAD TAGS */}
+      <Head>
+        <title>Partner With SeaMemories360 | Hotels, Boats & Villas in Corfu</title>
+        <meta
+          name="description"
+          content="Partner with SeaMemories360 to offer guests premium underwater video experiences in Corfu. Zero workload for staff, QR-based bookings, same-day delivery, and optional revenue sharing."
+        />
+        <link rel="canonical" href="https://www.seamemories360.com/partners" />
+
+        {/* SOCIAL / OG */}
+        <meta property="og:title" content="SeaMemories360 Partnerships | Hotels, Boats, Villas in Corfu" />
+        <meta
+          property="og:description"
+          content="Boost guest satisfaction with underwater video experiences. Perfect for hotels, boat rentals, marinas, villas, and dive centers. Zero effort required."
+        />
+        <meta property="og:image" content="https://www.seamemories360.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.seamemories360.com/partners" />
+        <meta property="og:type" content="website" />
+
+        {/* TWITTER CARD */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SeaMemories360 Partnerships | Hotels & Boats in Corfu" />
+        <meta
+          name="twitter:description"
+          content="Offer your guests unforgettable underwater filming experiences with zero extra work for your staff."
+        />
+        <meta name="twitter:image" content="https://www.seamemories360.com/og-image.jpg" />
+
+        {/* KEYWORDS */}
+        <meta
+          name="keywords"
+          content="corfu hotel partnership, boat rental partnership greece, underwater video partner, corfu tourism partner, villa partnership corfu, marina partnership corfu, hotel video experience corfu"
+        />
+
+        {/* JSON-LD STRUCTURED DATA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "SeaMemories360 Partnerships",
+              "url": "https://www.seamemories360.com/partners",
+              "description":
+                "Partner with SeaMemories360 to offer underwater video and underwater selfie experiences to guests in Corfu.",
+              "provider": {
+                "@type": "Person",
+                "name": "SeaMemories360",
+                "jobTitle": "Underwater Videographer",
+                "url": "https://www.seamemories360.com"
+              }
+            })
+          }}
+        />
+      </Head>
+
       <Header />
 
       {/* HERO */}
@@ -139,4 +197,3 @@ export default function Partners() {
     </div>
   );
 }
-

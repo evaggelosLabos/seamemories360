@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -18,10 +19,9 @@ const card = {
   padding: "25px",
   boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
   backdropFilter: "blur(6px)",
-  width: "100%",         // <— IMPORTANT FIX
+  width: "100%",
   boxSizing: "border-box",
 };
-
 
 const icon = { fontSize: "2.2rem", marginBottom: "10px" };
 const title = { margin: "0 0 10px 0", fontSize: "1.4rem", fontWeight: "600" };
@@ -38,11 +38,67 @@ export default function Experiences() {
         background: "linear-gradient(to bottom, #dff2ff, #c8e7ff)",
       }}
     >
+
+      {/* 🔵 SEO HEAD TAGS */}
+      <Head>
+        <title>Underwater Experiences in Corfu | SeaMemories360</title>
+        <meta
+          name="description"
+          content="Explore underwater experiences in Corfu with cinematic underwater drones. Underwater video, underwater selfies, AI highlights, coral reef filming, VR-ready 360° shots, and drone-assisted snorkeling adventures."
+        />
+        <link rel="canonical" href="https://www.seamemories360.com/experiences" />
+        
+        {/* SOCIAL PREVIEW */}
+        <meta property="og:title" content="Underwater Experiences in Corfu | SeaMemories360" />
+        <meta
+          property="og:description"
+          content="Discover immersive underwater adventures in Corfu — underwater videos, 360° VR filming, coral reef discovery, AI-edited highlights, and cinematic drone shots."
+        />
+        <meta property="og:image" content="https://www.seamemories360.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.seamemories360.com/experiences" />
+        <meta property="og:type" content="website" />
+
+        {/* TWITTER CARD */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Underwater Experiences in Corfu | SeaMemories360" />
+        <meta
+          name="twitter:description"
+          content="Immersive underwater filming experiences in Corfu including 360° video, underwater selfies, reef discovery, AI highlights, and cinematic drone captures."
+        />
+        <meta name="twitter:image" content="https://www.seamemories360.com/og-image.jpg" />
+
+        {/* KEYWORDS */}
+        <meta
+          name="keywords"
+          content="underwater experiences corfu, underwater video corfu, underwater selfie corfu, snorkeling video corfu, underwater filming greece, coral reef video corfu, drone underwater corfu"
+        />
+
+        {/* JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Underwater Experiences – SeaMemories360",
+              "url": "https://www.seamemories360.com/experiences",
+              "description":
+                "Underwater experiences in Corfu: underwater video, underwater selfies, coral reef exploration, 360° VR filming, AI-edited highlight reels.",
+              "about": {
+                "@type": "Person",
+                "name": "SeaMemories360",
+                "jobTitle": "Underwater Videographer",
+                "url": "https://www.seamemories360.com"
+              }
+            })
+          }}
+        />
+      </Head>
+
       <Header />
 
       {/* Animated Background */}
       <div style={{ position: "absolute", inset: 0, overflow: "hidden", zIndex: 0 }}>
-        
         {[...Array(10)].map((_, i) => (
           <div
             key={i}
@@ -73,24 +129,15 @@ export default function Experiences() {
           zIndex: 2,
         }}
       >
-        <h1 style={{ fontSize: "2.4rem", marginBottom: 20 }}>Experiences</h1>
+        <h1 style={{ fontSize: "2.4rem", marginBottom: 20 }}>Underwater Experiences</h1>
+
         <p style={{ fontSize: "1.1rem", marginBottom: 50 }}>
-          Discover immersive underwater adventures crafted with cutting-edge drone technology.
+          Dive into unique underwater adventures crafted with advanced 4K drone technology.  
+          Perfect for families, couples, solo adventurers, and sea lovers visiting Corfu.
         </p>
 
         {/* CARD GRID */}
-       <div
-  className="exp-grid"
-  style={{
-    display: "grid",
-    gap: "30px",
-  }}
->
-
-
-
-
-          {/* Cards */}
+        <div className="exp-grid" style={{ display: "grid", gap: "30px" }}>
 
           <div style={card}>
             <div style={icon}>🌊</div>
@@ -157,12 +204,13 @@ export default function Experiences() {
               <li>⚡ Real-time tracking</li>
             </ul>
           </div>
+
         </div>
       </main>
 
       <Footer />
 
-      {/* 🔵 NORMAL CSS — NO styled-jsx (NO CRASH) */}
+      {/* GLOBAL CSS */}
       <style>{`
         .bubble {
           position: absolute;
@@ -172,22 +220,21 @@ export default function Experiences() {
           animation: rise 10s infinite ease-in;
         }
 
-       .exp-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
+        .exp-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
 
-@media (max-width: 900px) {
-  .exp-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+        @media (max-width: 900px) {
+          .exp-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
 
-@media (max-width: 600px) {
-  .exp-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
+        @media (max-width: 600px) {
+          .exp-grid {
+            grid-template-columns: 1fr;
+          }
+        }
 
         @keyframes rise {
           0% { transform: translateY(0); opacity: 0.5; }
