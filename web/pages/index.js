@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import FeatureCard from '../components/FeatureCard';
 import GalleryGrid from '../components/GalleryGrid';
+import SeaScooterRental from '../components/SeaScooterRental';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import { useState } from 'react';
@@ -32,36 +33,36 @@ export default function Home() {
     <>
       <Head>
         {/* ========== PRIMARY SEO ========== */}
-        <title>Underwater Video & Selfie Filming in Corfu | SeaMemories360</title>
+        <title>Unique Corfu Experiences | Underwater Videos & Sea Scooter Rental</title>
         <meta
           name="description"
-          content="Professional underwater videos, underwater selfies, and cinematic snorkeling footage in Corfu. SeaMemories360 captures your holiday moments with stunning underwater videography."
+          content="Book a unique Corfu experience with SeaMemories360: underwater video filming, snorkeling memories, underwater selfies, and Aqua Marina sea scooter rental."
         />
         <link rel="canonical" href="https://www.seamemories360.com" />
 
         {/* ========== OG / SOCIAL ========== */}
-        <meta property="og:title" content="SeaMemories360 – Underwater Filming in Corfu" />
+        <meta property="og:title" content="Unique Corfu Experiences | SeaMemories360" />
         <meta
           property="og:description"
-          content="Cinematic underwater videos and underwater selfies captured with professional underwater cameras in Corfu, Greece."
+          content="Underwater videos, snorkeling memories, and sea scooter rental for unforgettable Corfu experiences."
         />
-        <meta property="og:image" content="https://www.seamemories360.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.seamemories360.com/images/aqua-marina-bluedrive-rental.png" />
         <meta property="og:url" content="https://www.seamemories360.com" />
         <meta property="og:type" content="website" />
 
         {/* ========== TWITTER CARD ========== */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="SeaMemories360 – Underwater Filming in Corfu" />
+        <meta name="twitter:title" content="Unique Corfu Experiences | SeaMemories360" />
         <meta
           name="twitter:description"
-          content="Underwater videos, underwater selfies, and cinematic snorkeling footage captured in Corfu."
+          content="Book unique Corfu experiences: underwater videos, snorkeling memories, and Aqua Marina sea scooter rental."
         />
-        <meta name="twitter:image" content="https://www.seamemories360.com/og-image.jpg" />
+        <meta name="twitter:image" content="https://www.seamemories360.com/images/aqua-marina-bluedrive-rental.png" />
 
         {/* ========== KEYWORDS ========== */}
         <meta
           name="keywords"
-          content="underwater video, underwater selfie, underwater filming, underwater videographer, snorkeling video corfu, holiday underwater video, underwater camera corfu, corfu underwater experience"
+          content="corfu experience, corfu experiences, unique corfu experiences, underwater experience corfu, sea experience corfu, underwater video corfu, snorkeling video corfu, sea scooter rental corfu, aqua marina sea scooter rental, corfu underwater experience"
         />
 
         {/* ========== JSON-LD PERSON SCHEMA ========== */}
@@ -70,12 +71,20 @@ export default function Home() {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
+              "@type": "LocalBusiness",
               "name": "SeaMemories360",
-              "jobTitle": "Underwater Videographer",
+              "image": "https://www.seamemories360.com/images/aqua-marina-bluedrive-rental.png",
               "description":
-                "Creator of underwater videos, underwater selfies, and cinematic snorkeling films in Corfu, Greece.",
-              "url": "https://www.seamemories360.com"
+                "Unique Corfu experiences including underwater videos, underwater selfies, cinematic snorkeling memories, and sea scooter rental in Corfu, Greece.",
+              "url": "https://www.seamemories360.com",
+              "telephone": "+306945474102",
+              "areaServed": "Corfu, Greece",
+              "makesOffer": {
+                "@type": "Offer",
+                "name": "Aqua Marina BlueDrive X Pro sea scooter rental in Corfu",
+                "areaServed": "Corfu, Greece",
+                "availability": "https://schema.org/InStock"
+              }
             })
           }}
         />
@@ -87,13 +96,13 @@ export default function Home() {
       {/* ========== SEO CONTENT BLOCK (RANKS FAST) ========== */}
       <section style={{padding:'40px 20px', maxWidth:1200, margin:'0 auto'}}>
         <h1 style={{textAlign:'center', marginBottom:20}}>
-          Underwater Video & Underwater Selfie Filming in Corfu
+          Unique Corfu Experiences: Underwater Videos & Sea Scooter Rental
         </h1>
         <p style={{textAlign:'center', maxWidth:800, margin:'0 auto', marginBottom:40}}>
-          SeaMemories360 specializes in <strong>underwater video</strong>, <strong>underwater selfies</strong>,
-          and cinematic <strong>snorkeling experiences</strong> in Corfu. Whether you're swimming, snorkeling,
-          or exploring the coastline, we capture your moments with stunning clarity. Perfect for families,
-          couples, solo travelers, and sea lovers visiting Greece.
+          SeaMemories360 creates <strong>unique Corfu experiences</strong> at sea with <strong>underwater video</strong>,
+          <strong> underwater selfies</strong>, cinematic <strong>snorkeling memories</strong>, and
+          <strong> sea scooter rental</strong>. Whether you're swimming, snorkeling, or exploring the coastline,
+          we help turn your holiday into something easy to remember and share.
         </p>
 
         <h2 style={{textAlign:'center', marginBottom:20}}>Why Sea Memories 360?</h2>
@@ -105,6 +114,7 @@ export default function Home() {
         </div>
       </section>
 
+      <SeaScooterRental />
       <GalleryGrid />
 
       <section style={{padding:'40px 20px', maxWidth:600, margin:'0 auto', textAlign:'center'}}>

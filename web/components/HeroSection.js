@@ -26,7 +26,6 @@ export default function HeroSection() {
         backgroundColor: '#000',
       }}
     >
-      {/* 🎥 Background video */}
       <video
         ref={videoRef}
         autoPlay
@@ -41,7 +40,7 @@ export default function HeroSection() {
           width: '100%',
           height: '100%',
           transform: 'translate(-50%, -50%)',
-          objectFit: 'cover', // desktop default
+          objectFit: 'cover',
           objectPosition: 'center',
           zIndex: 0,
           backgroundColor: '#000',
@@ -50,7 +49,6 @@ export default function HeroSection() {
         <source src="/videos/natali_fixed.mp4" type="video/mp4" />
       </video>
 
-      {/* 🌊 Overlay */}
       <div
         style={{
           position: 'absolute',
@@ -63,13 +61,11 @@ export default function HeroSection() {
         }}
       />
 
-      {/* 🧭 Text overlay */}
       <div className="hero-text">
-        <h1>Dive into Tomorrow’s Adventures</h1>
-        <p>Cinematic underwater memories, powered by AI — launching in Corfu.</p>
+        <h1>Unique Corfu Experiences at Sea</h1>
+        <p>Underwater videos, snorkeling memories, and sea scooter rentals in Corfu.</p>
       </div>
 
-      {/* 📱 Responsive behavior */}
       <style jsx>{`
         .hero-text {
           position: relative;
@@ -91,7 +87,6 @@ export default function HeroSection() {
           margin: 0 auto;
         }
 
-        /* 📱 On mobile, move text above the video */
         @media (max-width: 768px) {
           .hero-video {
             object-fit: contain !important;

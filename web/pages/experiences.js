@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SeaScooterRental from '../components/SeaScooterRental';
 
 // ---------- Right-facing SVG Fish ----------
 const FishRight = () => (
@@ -39,38 +40,38 @@ export default function Experiences() {
       }}
     >
 
-      {/* 🔵 SEO HEAD TAGS */}
+      {/* SEO HEAD TAGS */}
       <Head>
-        <title>Underwater Experiences in Corfu | SeaMemories360</title>
+        <title>Corfu Experiences | Underwater Videos & Sea Scooter Rental</title>
         <meta
           name="description"
-          content="Explore underwater experiences in Corfu with cinematic underwater drones. Underwater video, underwater selfies, AI highlights, coral reef filming, VR-ready 360° shots, and drone-assisted snorkeling adventures."
+          content="Explore unique Corfu experiences at sea: underwater videos, snorkeling memories, underwater selfies, AI highlights, boat-day add-ons, and Aqua Marina sea scooter rental."
         />
         <link rel="canonical" href="https://www.seamemories360.com/experiences" />
         
         {/* SOCIAL PREVIEW */}
-        <meta property="og:title" content="Underwater Experiences in Corfu | SeaMemories360" />
+        <meta property="og:title" content="Corfu Experiences | Underwater Adventures by SeaMemories360" />
         <meta
           property="og:description"
-          content="Discover immersive underwater adventures in Corfu — underwater videos, 360° VR filming, coral reef discovery, AI-edited highlights, and cinematic drone shots."
+          content="Discover underwater Corfu experiences with video filming, snorkeling memories, 360-style captures, reef discovery, and sea scooter rental."
         />
-        <meta property="og:image" content="https://www.seamemories360.com/og-image.jpg" />
+        <meta property="og:image" content="https://www.seamemories360.com/images/aqua-marina-bluedrive-rental.png" />
         <meta property="og:url" content="https://www.seamemories360.com/experiences" />
         <meta property="og:type" content="website" />
 
         {/* TWITTER CARD */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Underwater Experiences in Corfu | SeaMemories360" />
+        <meta name="twitter:title" content="Corfu Experiences | SeaMemories360" />
         <meta
           name="twitter:description"
-          content="Immersive underwater filming experiences in Corfu including 360° video, underwater selfies, reef discovery, AI highlights, and cinematic drone captures."
+          content="Unique Corfu experiences at sea: underwater filming, snorkeling videos, underwater selfies, and Aqua Marina sea scooter rental."
         />
-        <meta name="twitter:image" content="https://www.seamemories360.com/og-image.jpg" />
+        <meta name="twitter:image" content="https://www.seamemories360.com/images/aqua-marina-bluedrive-rental.png" />
 
         {/* KEYWORDS */}
         <meta
           name="keywords"
-          content="underwater experiences corfu, underwater video corfu, underwater selfie corfu, snorkeling video corfu, underwater filming greece, coral reef video corfu, drone underwater corfu"
+          content="corfu experiences, corfu experience, unique corfu experiences, underwater experiences corfu, sea experience corfu, sea scooter rental corfu, aqua marina bluedrive rental, underwater video corfu, underwater selfie corfu, snorkeling video corfu, underwater filming greece"
         />
 
         {/* JSON-LD */}
@@ -80,10 +81,11 @@ export default function Experiences() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebPage",
-              "name": "Underwater Experiences – SeaMemories360",
+              "name": "Corfu Experiences - SeaMemories360",
+              "image": "https://www.seamemories360.com/images/aqua-marina-bluedrive-rental.png",
               "url": "https://www.seamemories360.com/experiences",
               "description":
-                "Underwater experiences in Corfu: underwater video, underwater selfies, coral reef exploration, 360° VR filming, AI-edited highlight reels.",
+                "Unique Corfu experiences at sea: sea scooter rental, underwater video, underwater selfies, snorkeling memories, 360 video, and AI-edited highlight reels.",
               "about": {
                 "@type": "Person",
                 "name": "SeaMemories360",
@@ -129,83 +131,85 @@ export default function Experiences() {
           zIndex: 2,
         }}
       >
-        <h1 style={{ fontSize: "2.4rem", marginBottom: 20 }}>Underwater Experiences</h1>
+        <h1 style={{ fontSize: "2.4rem", marginBottom: 20 }}>Unique Corfu Experiences at Sea</h1>
 
         <p style={{ fontSize: "1.1rem", marginBottom: 50 }}>
-          Dive into unique underwater adventures crafted with advanced 4K drone technology.  
-          Perfect for families, couples, solo adventurers, and sea lovers visiting Corfu.
+          Dive into underwater Corfu experiences crafted for families, couples, solo adventurers,
+          boat days, and sea lovers who want more than ordinary holiday photos.
         </p>
 
         {/* CARD GRID */}
         <div className="exp-grid" style={{ display: "grid", gap: "30px" }}>
 
           <div style={card}>
-            <div style={icon}>🌊</div>
+            <div style={icon}>Reef</div>
             <h3 style={title}>Reef Discovery</h3>
             <p style={desc}>Glide over vibrant shallow reefs.</p>
             <ul style={miniList}>
-              <li>🐠 Reef fish</li>
-              <li>🪸 Coral</li>
-              <li>📷 Cinematic capture</li>
+              <li>Reef fish</li>
+              <li>Clear coastal water</li>
+              <li>Cinematic capture</li>
             </ul>
           </div>
 
           <div style={card}>
-            <div style={icon}>📸</div>
-            <h3 style={title}>360° Memory</h3>
+            <div style={icon}>360</div>
+            <h3 style={title}>360 Memory</h3>
             <p style={desc}>Immersive VR-ready underwater footage.</p>
             <ul style={miniList}>
-              <li>🔄 Full sphere</li>
-              <li>🌐 VR-ready</li>
-              <li>💾 Digital delivery</li>
+              <li>Full sphere</li>
+              <li>VR-ready</li>
+              <li>Digital delivery</li>
             </ul>
           </div>
 
           <div style={card}>
-            <div style={icon}>🤖</div>
+            <div style={icon}>AI</div>
             <h3 style={title}>AI Highlight</h3>
             <p style={desc}>AI auto-edits your best moments.</p>
             <ul style={miniList}>
-              <li>🎬 Smart cuts</li>
-              <li>🎶 Soundtrack</li>
-              <li>✨ Color enhancement</li>
+              <li>Smart cuts</li>
+              <li>Soundtrack</li>
+              <li>Color enhancement</li>
             </ul>
           </div>
 
           <div style={card}>
-            <div style={icon}>✋</div>
+            <div style={icon}>GO</div>
             <h3 style={title}>Gesture Mode</h3>
-            <p style={desc}>Raise your hand → drone orbits you.</p>
+            <p style={desc}>Raise your hand and the drone orbits you.</p>
             <ul style={miniList}>
-              <li>🌀 Orbit shot</li>
-              <li>📐 Auto-framing</li>
-              <li>🤳 Selfie-perfect</li>
+              <li>Orbit shot</li>
+              <li>Auto-framing</li>
+              <li>Selfie-perfect</li>
             </ul>
           </div>
 
           <div style={card}>
-            <div style={icon}>🚤</div>
+            <div style={icon}>Boat</div>
             <h3 style={title}>Boat Day Add-on</h3>
             <p style={desc}>Instant previews during your trip.</p>
             <ul style={miniList}>
-              <li>📱 QR preview</li>
-              <li>⚡ Instant playback</li>
-              <li>📤 Same-day delivery</li>
+              <li>QR preview</li>
+              <li>Instant playback</li>
+              <li>Same-day delivery</li>
             </ul>
           </div>
 
           <div style={card}>
-            <div style={icon}>🎯</div>
-            <h3 style={title}>AI Object Tracking</h3>
-            <p style={desc}>Drone locks onto a swimmer and follows smoothly.</p>
+            <div style={icon}>SEA</div>
+            <h3 style={title}>Sea Scooter Rental</h3>
+            <p style={desc}>Rent an Aqua Marina BlueDrive X Pro for your Corfu swim or boat day.</p>
             <ul style={miniList}>
-              <li>🤖 Smart lock-on</li>
-              <li>🎥 Follow shots</li>
-              <li>⚡ Real-time tracking</li>
+              <li>Aqua Marina sea scooter</li>
+              <li>Ideal for snorkeling</li>
+              <li>Easy WhatsApp booking</li>
             </ul>
           </div>
 
         </div>
+
+        <SeaScooterRental />
       </main>
 
       <Footer />
@@ -259,3 +263,4 @@ export default function Experiences() {
     </div>
   );
 }
+
