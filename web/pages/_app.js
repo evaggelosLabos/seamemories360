@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import '../styles/hero.css';
-import Script from 'next/script';
+import Head from 'next/head';
 import WhatsAppButton from '../components/WhatsAppButton';
 
 const GA_MEASUREMENT_ID = 'G-ZZEF1JHEP4';
@@ -8,18 +8,22 @@ const GA_MEASUREMENT_ID = 'G-ZZEF1JHEP4';
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}');
-        `}
-      </Script>
+      <Head>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}');
+            `,
+          }}
+        />
+      </Head>
       <Component {...pageProps} />
       <WhatsAppButton />
     </>
