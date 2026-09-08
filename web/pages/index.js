@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection';
 import FeatureCard from '../components/FeatureCard';
 import GalleryGrid from '../components/GalleryGrid';
 import SeaScooterRental from '../components/SeaScooterRental';
+import ServiceLinks from '../components/ServiceLinks';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import { useState } from 'react';
@@ -114,6 +115,7 @@ export default function Home() {
         </div>
       </section>
 
+      <ServiceLinks />
       <SeaScooterRental />
       <GalleryGrid />
 

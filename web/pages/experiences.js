@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SeaScooterRental from '../components/SeaScooterRental';
+import ServiceLinks from '../components/ServiceLinks';
 
 // ---------- Right-facing SVG Fish ----------
 const FishRight = () => (
@@ -209,6 +210,7 @@ export default function Experiences() {
 
         </div>
 
+        <ServiceLinks />
         <SeaScooterRental />
       </main>
 

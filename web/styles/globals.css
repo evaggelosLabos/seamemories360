@@ -4,6 +4,189 @@ body { margin: 0; font-family: ui-sans-serif, system-ui, Arial, sans-serif; colo
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display:block; }
 
+.service-page {
+  background: linear-gradient(180deg, #f7fcff 0%, #e8f6fb 50%, #f8fcf9 100%);
+  color: #062f3d;
+}
+
+.service-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+  gap: 34px;
+  align-items: center;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0 44px;
+}
+
+.service-hero-copy h1 {
+  margin: 0 0 18px;
+  color: #062f3d;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.02;
+}
+
+.service-hero-copy p {
+  margin: 0;
+  max-width: 680px;
+  color: #285764;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.service-eyebrow {
+  margin-bottom: 12px !important;
+  color: #0a7d68 !important;
+  font-size: 13px !important;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.service-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.service-primary,
+.service-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.service-primary {
+  background: #023449;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(2, 52, 73, 0.2);
+}
+
+.service-secondary {
+  border: 1px solid rgba(2, 52, 73, 0.2);
+  background: rgba(255, 255, 255, 0.74);
+  color: #023449;
+}
+
+.service-hero-media {
+  position: relative;
+  min-height: 540px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #dbe9ed;
+  box-shadow: 0 18px 46px rgba(2, 78, 118, 0.16);
+}
+
+.service-highlights,
+.service-content,
+.service-faq,
+.service-links {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.service-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 22px 0 44px;
+}
+
+.service-highlights article,
+.service-content article,
+.service-faq details,
+.service-links a {
+  border: 1px solid rgba(2, 78, 118, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 12px 34px rgba(2, 78, 118, 0.08);
+}
+
+.service-highlights article {
+  padding: 20px;
+}
+
+.service-highlights span {
+  color: #0a7d68;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.service-highlights h2,
+.service-content h2,
+.service-faq h2,
+.service-links h2 {
+  margin: 10px 0 10px;
+  color: #023449;
+}
+
+.service-highlights p,
+.service-content p,
+.service-faq p,
+.service-links span {
+  color: #315b66;
+  line-height: 1.65;
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+.service-content article {
+  padding: 24px;
+}
+
+.service-faq {
+  padding: 4px 0 72px;
+}
+
+.service-faq details {
+  padding: 18px 20px;
+  margin-top: 12px;
+}
+
+.service-faq summary {
+  cursor: pointer;
+  color: #023449;
+  font-weight: 800;
+}
+
+.service-faq p {
+  margin-bottom: 0;
+}
+
+.service-links {
+  padding: 18px 20px 44px;
+}
+
+.service-links h2 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.service-links > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+.service-links a {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+}
+
+.service-links strong {
+  color: #023449;
+}
+
 .seascooter-rental {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
@@ -132,6 +315,20 @@ img { max-width: 100%; height: auto; display:block; }
 }
 
 @media (max-width: 860px) {
+  .service-hero,
+  .service-highlights,
+  .service-content {
+    grid-template-columns: 1fr;
+  }
+
+  .service-hero {
+    padding-top: 42px;
+  }
+
+  .service-hero-media {
+    min-height: 420px;
+  }
+
   .seascooter-rental {
     grid-template-columns: 1fr;
     padding: 22px;
