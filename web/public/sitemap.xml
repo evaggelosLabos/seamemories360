@@ -17,14 +17,21 @@
 
   <url>
     <loc>https://www.seamemories360.com/sea-scooter-rental-corfu</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-21</lastmod>
+    <priority>0.95</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.seamemories360.com/snorkeling-in-corfu</loc>
+    <lastmod>2026-09-21</lastmod>
     <priority>0.95</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://www.seamemories360.com/underwater-experience-corfu</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <priority>0.95</priority>
     <changefreq>weekly</changefreq>
   </url>

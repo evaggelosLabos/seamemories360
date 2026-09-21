@@ -12,6 +12,11 @@ const services = [
     text: 'Rent an Aqua Marina BlueDrive X Pro for snorkeling, swimming, and boat days in Corfu.',
   },
   {
+    href: '/snorkeling-in-corfu',
+    title: 'Snorkeling in Corfu',
+    text: 'Plan a snorkeling activity and turn it into underwater video memories with optional sea scooter action.',
+  },
+  {
     href: '/underwater-experience-corfu',
     title: 'Underwater Photo & Video Experience',
     text: 'Capture underwater selfies, short video clips, snorkeling footage, and sea memories in Corfu.',
