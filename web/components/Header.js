@@ -69,6 +69,8 @@ export default function Header() {
         className="desktop-nav"
       >
         <Link href="/experiences" style={{ color: '#000', textDecoration: 'none' }}>Experiences</Link>
+        <Link href="/sea-scooter-rental-corfu" style={{ color: '#000', textDecoration: 'none' }}>Sea Scooter Rental</Link>
+        <Link href="/underwater-experience-corfu" style={{ color: '#000', textDecoration: 'none' }}>Underwater Experience</Link>
         <Link href="/about" style={{ color: '#000', textDecoration: 'none' }}>About</Link>
         <Link href="/partners" style={{ color: '#000', textDecoration: 'none' }}>Partners</Link>
         <Link href="/contact" style={{ color: '#000', textDecoration: 'none' }}>Contact</Link>
@@ -111,6 +113,8 @@ export default function Header() {
           }}
         >
           <Link href="/experiences" style={{ color: '#000', textDecoration: 'none' }}>Experiences</Link>
+          <Link href="/sea-scooter-rental-corfu" style={{ color: '#000', textDecoration: 'none' }}>Sea Scooter Rental</Link>
+          <Link href="/underwater-experience-corfu" style={{ color: '#000', textDecoration: 'none' }}>Underwater Experience</Link>
           <Link href="/about" style={{ color: '#000', textDecoration: 'none' }}>About</Link>
           <Link href="/partners" style={{ color: '#000', textDecoration: 'none' }}>Partners</Link>
           <Link href="/contact" style={{ color: '#000', textDecoration: 'none' }}>Contact</Link>

@@ -3,29 +3,30 @@ import ServiceLanding from '../components/ServiceLanding';
 export default function CorfuExperience() {
   return (
     <ServiceLanding
-      title="Unique Corfu Experience | Underwater Videos & Sea Scooter Rental"
-      description="Book a unique Corfu experience at sea with SeaMemories360: underwater videos, snorkeling memories, underwater selfies, and Aqua Marina sea scooter rental."
+      title="Unique Corfu Experience at Sea | SeaMemories360"
+      description="Book a unique Corfu sea experience with underwater video, snorkeling memories, sea scooter moments, and easy WhatsApp planning for visitors in Corfu."
       canonicalPath="/corfu-experience"
-      keywords={['corfu experience', 'unique corfu experience', 'corfu experiences', 'sea experience corfu', 'underwater experience corfu', 'things to do in corfu']}
-      eyebrow="Unique Corfu experience"
-      heading="A Unique Corfu Experience at Sea"
-      intro="SeaMemories360 helps visitors turn a beach day, boat trip, or snorkeling stop into a cinematic sea memory with underwater filming, sea scooter rental, and easy WhatsApp booking."
-      imageAlt="Aqua Marina sea scooter on the Corfu coastline for a unique Corfu experience"
-      whatsappText="Hi Sea Memories 360, I'd like to book a unique Corfu experience at sea."
+      keywords={['unique corfu experience', 'corfu sea experience', 'corfu experiences at sea', 'things to do in corfu', 'unique things to do in corfu', 'corfu water activities']}
+      eyebrow="Unique Corfu sea experience"
+      heading="Unique Corfu Experience at Sea"
+      intro="SeaMemories360 turns a beach visit, boat stop, or snorkeling moment into a personal sea memory with underwater video, sea scooter action, and simple WhatsApp booking."
+      imageAlt="Sea scooter and underwater video experience on the Corfu coastline"
+      whatsappText="Hi Sea Memories 360, I'd like to book a unique Corfu sea experience."
       highlights={[
-        { label: '01', title: 'Made for Corfu', text: 'Built around the coastline, clear water, boat stops, and holiday rhythm of Corfu.' },
-        { label: '02', title: 'Easy to Book', text: 'Visitors can ask questions and reserve quickly through WhatsApp.' },
-        { label: '03', title: 'Shareable Memories', text: 'Designed around moments people actually want to remember and share.' },
+        { label: 'Corfu', title: 'Built for Sea Days', text: 'Made for beach visits, boat stops, calm coastal water, and the relaxed rhythm of a Corfu holiday.' },
+        { label: 'Memory', title: 'More Than Photos', text: 'Underwater video and sea-level footage give visitors a memory that feels personal and easy to share.' },
+        { label: 'Booking', title: 'Simple to Arrange', text: 'Ask for availability, location advice, and the right setup for your group directly through WhatsApp.' },
       ]}
       sections={[
-        { title: 'What makes this Corfu experience different?', text: 'Most visitors leave Corfu with phone photos. SeaMemories360 adds a sea-level story: underwater video, snorkeling memories, underwater selfies, and optional sea scooter rental for a more active experience.' },
-        { title: 'Who is it for?', text: 'It fits couples, families, solo travelers, boat guests, villa guests, hotel visitors, and anyone who wants a simple but memorable thing to do in Corfu.' },
-        { title: 'How booking works', text: 'Send a WhatsApp message, tell us your preferred day and location, and we help match the right sea experience for your plans.' },
+        { title: 'What makes this Corfu experience different?', text: 'Most visitors leave Corfu with phone photos from the beach. SeaMemories360 creates a sea-based memory with underwater video, snorkeling moments, underwater selfies, and optional Aqua Marina sea scooter use.' },
+        { title: 'Who is this experience for?', text: 'It fits couples, families, solo travelers, boat guests, villa guests, hotel visitors, and anyone searching for a unique thing to do in Corfu without joining a large tour.' },
+        { title: 'How the experience works', text: 'Send a WhatsApp message with your date, group size, and where you will be in Corfu. We help shape the right sea memory around your beach day, boat day, or snorkeling plan.' },
       ]}
       faq={[
-        { question: 'What is the SeaMemories360 Corfu experience?', answer: 'It is a sea-based Corfu experience combining underwater filming, snorkeling memories, underwater selfies, and optional Aqua Marina sea scooter rental.' },
-        { question: 'Where in Corfu is it available?', answer: 'The service is available in Corfu and is best planned around calm coastal areas, beach visits, snorkeling stops, and boat days.' },
-        { question: 'How do I book?', answer: 'The fastest way to book is through WhatsApp. Send your preferred date, number of people, and the type of experience you want.' },
+        { question: 'What is a unique Corfu sea experience with SeaMemories360?', answer: 'It is a personalized sea memory for visitors in Corfu, combining underwater video, snorkeling moments, underwater selfies, and optional sea scooter rental.' },
+        { question: 'Is this a good thing to do in Corfu for couples or families?', answer: 'Yes. The experience is designed for couples, families, friends, solo travelers, and boat guests who want something memorable without needing diving experience.' },
+        { question: 'Where in Corfu can I book the experience?', answer: 'The experience is planned around suitable coastal areas, beach days, snorkeling stops, and boat trips in Corfu, depending on weather and sea conditions.' },
+        { question: 'How do I book a Corfu sea experience?', answer: 'The fastest way to book is through WhatsApp. Send your preferred date, group size, location, and whether you want underwater video, sea scooter rental, or both.' },
       ]}
     />
   );
